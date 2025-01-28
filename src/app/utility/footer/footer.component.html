@@ -1,0 +1,13 @@
+<footer>
+  <ul class="footer__list row flex-center">
+    <li class="footer__item col-2 flex-center" *ngFor="let info of contactInfo">
+      <div class="footer__wrapper">
+        <i [class]="info.icon" aria-hidden="true"></i>
+        <span>{{ info.text }}</span>
+        <a href="#" [attr.data-href]="info.href" class="obfuscated-link">
+          <span [id]="info.id" [innerHTML]="info.anchor"></span>
+        </a>
+      </div>
+    </li>
+  </ul>
+</footer>
