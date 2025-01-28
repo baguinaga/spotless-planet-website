@@ -1,1 +1,133 @@
-/* You can add global styles to this file, and also import other style files */
+/* Variables */
+:root {
+  --container-padding: 15px;
+  --gutter-width: 15px;
+  --body-color: #f1e8e4;
+  --primary-color: #5daaa6;
+  --secondary-color: #3a7774;
+  --tertiary-color: #4d567a;
+
+  --font-family-header: "Libre Bodoni", serif;
+  --font-family-body: "Albert Sans", sans-serif;
+  --font-size-header: 3rem;
+  --font-size-body: 1.25rem;
+}
+
+/* Normalize CSS */
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+/* ADA Classes */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Document Wide */
+
+body {
+  background: var(--body-color);
+}
+
+/* Flexbox Grid */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
+  max-width: 1140px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  padding-right: var(--gutter-width);
+  padding-left: var(--gutter-width);
+}
+
+.col-1 {
+  flex: 0 0 8.33%;
+  max-width: 8.33%;
+}
+.col-2 {
+  flex: 0 0 16.66%;
+  max-width: 16.66%;
+}
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.col-4 {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+.col-5 {
+  flex: 0 0 41.66%;
+  max-width: 41.66%;
+}
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-7 {
+  flex: 0 0 58.33%;
+  max-width: 58.33%;
+}
+.col-8 {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+}
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.col-10 {
+  flex: 0 0 83.33%;
+  max-width: 83.33%;
+}
+.col-11 {
+  flex: 0 0 91.66%;
+  max-width: 91.66%;
+}
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* Utility Atomic Classes */
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

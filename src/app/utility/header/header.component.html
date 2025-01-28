@@ -1,0 +1,24 @@
+<header id="home">
+  <nav class="nav">
+    <ul class="nav__list row flex-end">
+      <ng-container *ngFor="let link of navLinks">
+        <li
+          class="nav__item col-1 flex-center"
+          [routerLink]="['/']"
+          fragment="{{ link.href }}"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{
+          matrixParams: 'exact',
+          queryParams: 'exact',
+          paths: 'exact',
+          fragment: 'exact',
+        }
+        "
+          [ngClass]="{ active: link.default }"
+        >
+          <a class="nav__link">{{ link.text }}</a>
+        </li>
+      </ng-container>
+    </ul>
+  </nav>
+</header>

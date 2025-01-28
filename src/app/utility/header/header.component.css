@@ -1,0 +1,35 @@
+.nav {
+  height: 4.5rem;
+  background-color: #3a7774;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav__list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+.nav__item {
+  height: 100%;
+  cursor: pointer;
+}
+
+.nav__item.active {
+  background-color: #5daaa6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scaleY(1.05);
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  font: var(--font-size-body) var(--font-family-body);
+}
+
+.active .nav__link {
+  text-decoration: underline;
+  text-decoration-thickness: 0.15rem;
+  text-underline-offset: 0.4rem;
+}
