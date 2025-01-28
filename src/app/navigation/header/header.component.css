@@ -1,6 +1,6 @@
 .nav {
   height: 4.5rem;
-  background-color: #3a7774;
+  background-color: var(--secondary-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -16,8 +16,13 @@
   cursor: pointer;
 }
 
+.nav__item:hover {
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .nav__item.active {
-  background-color: #5daaa6;
+  background-color: var(--primary-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scaleY(1.05);
 }
@@ -25,7 +30,7 @@
 .nav__link {
   text-decoration: none;
   color: #fff;
-  font: var(--font-size-body) var(--font-family-body);
+  font: var(--font-size-medium) var(--font-family-body);
 }
 
 .active .nav__link {

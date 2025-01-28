@@ -1,5 +1,38 @@
 .footer__list {
-  align-items: center;
   list-style-type: none;
+  height: 100px;
   padding: 0px;
+  background-color: #fff;
+  border-top: var(--tertiary-color) 4px solid;
 }
+
+.footer__item {
+  font: var(--font-size-small) var(--font-family-body);
+  white-space: nowrap;
+}
+
+.footer__info--text {
+  font-weight: bold;
+}
+
+.footer__wrapper {
+  color: var(--tertiary-color);
+}
+
+.footer__wrapper .footer__link {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.footer__wrapper .footer__link:hover {
+  text-decoration: underline;
+  color: var(--tertiary-color-light);
+}
+/* 
+.footer__wrapper a.no-cursor {
+  cursor: default;
+}
+
+.footer__wrapper a.no-cursor:hover {
+  text-decoration: none;
+} */

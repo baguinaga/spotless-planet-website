@@ -6,6 +6,7 @@ import {
   ChangeDetectorRef,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { cursorTo } from 'readline';
 
 @Component({
   selector: 'app-footer',
@@ -22,6 +23,7 @@ export class FooterComponent implements AfterViewInit {
       text: 'Telephone: ',
       anchor: '555-555-5555',
       href: 'tel:5555555555',
+      clickable: true,
     },
     {
       icon: 'icon__email',
@@ -29,6 +31,7 @@ export class FooterComponent implements AfterViewInit {
       text: 'Email: ',
       anchor: 'info@spotlessplanet.com',
       href: 'mailto:info@spotlessplanet.com',
+      clickable: true,
     },
     {
       icon: 'icon__calendar',
@@ -36,6 +39,7 @@ export class FooterComponent implements AfterViewInit {
       text: 'Hours:',
       anchor: '<br>Mon - Sat: 8:00 am - 6:00 pm,<br>Sun: Closed',
       href: '#',
+      clickable: false,
     },
   ];
   constructor(

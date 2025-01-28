@@ -6,11 +6,13 @@
   --primary-color: #5daaa6;
   --secondary-color: #3a7774;
   --tertiary-color: #4d567a;
+  --tertiary-color-light: #8a93b3;
 
   --font-family-header: "Libre Bodoni", serif;
   --font-family-body: "Albert Sans", sans-serif;
-  --font-size-header: 3rem;
-  --font-size-body: 1.25rem;
+  --font-size-large: 3rem;
+  --font-size-medium: 1.25rem;
+  --font-size-small: 1rem;
 }
 
 /* Normalize CSS */
@@ -41,7 +43,19 @@ body {
   background: var(--body-color);
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 /* Flexbox Grid */
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 .container {
   display: flex;
@@ -123,6 +137,12 @@ body {
 .flex-center {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 

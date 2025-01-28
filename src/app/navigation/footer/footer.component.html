@@ -1,12 +1,25 @@
 <footer>
-  <ul class="footer__list row flex-center">
+  <ul class="footer__list row flex-around">
     <li class="footer__item col-2 flex-center" *ngFor="let info of contactInfo">
       <div class="footer__wrapper">
         <i [class]="info.icon" aria-hidden="true"></i>
-        <span>{{ info.text }}</span>
-        <a href="#" [attr.data-href]="info.href" class="obfuscated-link">
-          <span [id]="info.id" [innerHTML]="info.anchor"></span>
-        </a>
+        <span class="footer__info--text">{{ info.text }}</span>
+
+        <ng-container *ngIf="info.clickable; else nonClickable">
+          <a
+            href="#"
+            [attr.data-href]="info.href"
+            class="footer__link obfuscated-link"
+          >
+            <span [id]="info.id" [innerHTML]="info.anchor"></span>
+          </a>
+        </ng-container>
+
+        <ng-template #nonClickable>
+          <span class="footer__span obfuscated-link">
+            <span [id]="info.id" [innerHTML]="info.anchor"></span>
+          </span>
+        </ng-template>
       </div>
     </li>
   </ul>
