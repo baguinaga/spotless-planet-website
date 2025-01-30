@@ -3,6 +3,8 @@
   --container-padding: 15px;
   --gutter-width: 15px;
   --body-color: #f1e8e4;
+  --color-white: #fff;
+  --color-black: #000;
   --primary-color: #5daaa6;
   --secondary-color: #3a7774;
   --tertiary-color: #4d567a;
@@ -22,6 +24,10 @@ body {
 }
 
 ul {
+  margin: 0;
+}
+
+figure {
   margin: 0;
 }
 
@@ -60,10 +66,8 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: var(--container-padding);
-  padding-left: var(--container-padding);
+  margin: auto;
+  width: 100%;
   max-width: 1140px;
 }
 

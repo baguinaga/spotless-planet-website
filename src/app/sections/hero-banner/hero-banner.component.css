@@ -1,0 +1,43 @@
+.logo {
+  width: 125px;
+  height: 125px;
+  border: 2px solid var(--color-black);
+  border-radius: 50%;
+}
+
+.hero-banner {
+  background-image: url("/assets/images/unsplash_banner_large.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  align-content: center;
+}
+.hero-banner__header {
+  align-items: center;
+}
+
+.hero-banner__header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.hero-banner__header-text {
+  font: var(--font-size-large) var(--font-family-header);
+  color: var(--color-black);
+  margin: 0px;
+}
+
+.hero-banner__subheader-text {
+  font: var(--font-size-medium) var(--font-family-header);
+  color: var(--color-black);
+  margin: 0px;
+}
+
+.hero-banner__about-text {
+  font: var(--font-size-small) var(--font-family-body);
+  color: var(--color-black);
+  margin: 0.75rem 0;
+}
