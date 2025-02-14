@@ -1,0 +1,24 @@
+.about__section {
+  margin: 2.5rem 0;
+}
+
+.about__heading {
+  font: var(--font-size-large) var(--font-family-header);
+  color: var(--color-black);
+  margin: 0 0 2.5rem;
+}
+.about__text {
+  font: var(--font-size-small) var(--font-family-body);
+  color: var(--color-black);
+  margin: 0.75rem 0;
+  padding-left: 3rem;
+}
+
+.about__image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about__container {
+  flex-direction: column;
+}

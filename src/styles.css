@@ -12,7 +12,8 @@
 
   --font-family-header: "Libre Bodoni", serif;
   --font-family-body: "Albert Sans", sans-serif;
-  --font-size-large: 3rem;
+  --font-size-title: 3rem;
+  --font-size-large: 2rem;
   --font-size-medium: 1.25rem;
   --font-size-small: 1rem;
 }
@@ -129,6 +130,114 @@ body {
 .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
+}
+
+/* Responsive Sizes */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .col-md-1 {
+    flex: 0 0 8.33% !important;
+    max-width: 8.33% !important;
+  }
+  .col-md-2 {
+    flex: 0 0 16.66% !important;
+    max-width: 16.66% !important;
+  }
+  .col-md-3 {
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+  }
+  .col-md-4 {
+    flex: 0 0 33.33% !important;
+    max-width: 33.33% !important;
+  }
+  .col-md-5 {
+    flex: 0 0 41.66% !important;
+    max-width: 41.66% !important;
+  }
+  .col-md-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+  .col-md-7 {
+    flex: 0 0 58.33% !important;
+    max-width: 58.33% !important;
+  }
+  .col-md-8 {
+    flex: 0 0 66.66% !important;
+    max-width: 66.66% !important;
+  }
+  .col-md-9 {
+    flex: 0 0 75% !important;
+    max-width: 75% !important;
+  }
+  .col-md-10 {
+    flex: 0 0 83.33% !important;
+    max-width: 83.33% !important;
+  }
+  .col-md-11 {
+    flex: 0 0 91.66% !important;
+    max-width: 91.66% !important;
+  }
+  .col-md-12 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .col {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .col-sm-1 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .col-sm-2 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+  .col-sm-3 {
+    flex: 0 0 33.33% !important;
+    max-width: 33.33% !important;
+  }
+  .col-sm-4 {
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+  }
+  .col-sm-5 {
+    flex: 0 0 20% !important;
+    max-width: 20% !important;
+  }
+  .col-sm-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+  .col-sm-7 {
+    flex: 0 0 58.33% !important;
+    max-width: 58.33% !important;
+  }
+  .col-sm-8 {
+    flex: 0 0 66.66% !important;
+    max-width: 66.66% !important;
+  }
+  .col-sm-9 {
+    flex: 0 0 75% !important;
+    max-width: 75% !important;
+  }
+  .col-sm-10 {
+    flex: 0 0 83.33% !important;
+    max-width: 83.33% !important;
+  }
+  .col-sm-11 {
+    flex: 0 0 91.66% !important;
+    max-width: 91.66% !important;
+  }
+  .col-sm-12 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
 }
 
 /* Utility Atomic Classes */

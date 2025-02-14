@@ -25,7 +25,7 @@
 }
 
 .hero-banner__header-text {
-  font: var(--font-size-large) var(--font-family-header);
+  font: var(--font-size-title) var(--font-family-header);
   color: var(--color-black);
   margin: 0px;
 }
