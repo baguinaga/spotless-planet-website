@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './navigation/header/header.component';
-import { FooterComponent } from './navigation/footer/footer.component';
 import { HeroBannerComponent } from './sections/hero-banner/hero-banner.component';
 import { AboutComponent } from './sections/about/about.component';
 import { ServicesComponent } from './sections/services/services.component';
@@ -10,7 +9,6 @@ import { ServicesComponent } from './sections/services/services.component';
   standalone: true,
   imports: [
     HeaderComponent,
-    FooterComponent,
     HeroBannerComponent,
     AboutComponent,
     ServicesComponent,

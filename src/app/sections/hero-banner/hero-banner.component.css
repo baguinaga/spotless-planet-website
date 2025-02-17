@@ -1,8 +1,6 @@
 .logo {
   width: 125px;
   height: 125px;
-  border: 2px solid var(--color-black);
-  border-radius: 50%;
 }
 
 .hero-banner {
