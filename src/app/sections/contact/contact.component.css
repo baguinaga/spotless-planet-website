@@ -19,9 +19,25 @@
   list-style-type: none;
 }
 
+.contact__anchor {
+  display: inline-flex;
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 0.2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact__anchor:hover {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+}
+
 .contact__image {
   width: 100%;
   border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contact__container {
