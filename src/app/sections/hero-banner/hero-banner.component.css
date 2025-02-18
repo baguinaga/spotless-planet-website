@@ -1,31 +1,7 @@
-.logo {
-  width: 125px;
-  height: 125px;
-}
-
-/* .hero-banner {
-  background-image: url("/assets/images/unsplash_banner_large.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
-  align-content: center;
-} */
-
 .hero-banner {
   position: relative;
   overflow: hidden;
-  height: 100vh;
-}
-
-.hero-banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* backdrop-filter: blur(2px); */
-  z-index: 0;
+  height: calc(100vh - 72px);
 }
 
 .hero-banner__video {
@@ -35,17 +11,40 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: blur(1px);
   z-index: -1;
 }
 
+.hero-banner__container {
+  height: 100%;
+}
+
 .hero-banner__content {
+  padding: 3rem;
   position: relative;
   z-index: 1;
-  color: white; /* Adjust text color for better visibility */
+  color: white;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-banner__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+  border-radius: 24px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 .hero-banner__header {
   align-items: center;
+  justify-content: center;
 }
 
 .hero-banner__header-container {
@@ -58,18 +57,32 @@
 
 .hero-banner__header-text {
   font: var(--font-size-title) var(--font-family-header);
-  color: var(--color-black);
+  text-shadow: 2px 2px 4px var(--color-black);
   margin: 0px;
+  justify-content: center;
 }
 
 .hero-banner__subheader-text {
-  font: var(--font-size-medium) var(--font-family-header);
-  color: var(--color-black);
+  font: var(--font-size-large) var(--font-family-header);
+  text-shadow: 2px 2px 4px var(--color-black);
   margin: 0px;
 }
 
+.hero-banner__about {
+  margin-top: 3rem;
+}
+
 .hero-banner__about-text {
-  font: var(--font-size-small) var(--font-family-body);
-  color: var(--color-black);
+  font: var(--font-size-medium) var(--font-family-body);
+  text-shadow: 2px 2px 4px var(--color-black);
   margin: 0.75rem 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -1,6 +1,16 @@
-<header id="home">
-  <nav class="nav">
+<header>
+  <nav class="nav" aria-label="Main Navigation">
     <ul class="nav__list container flex-end">
+      <div class="logo-container">
+        <figure class="logo-container__figure">
+          <img
+            class="logo"
+            src="assets/images/spotless_planet.svg"
+            alt="Spotless Planet Logo"
+          />
+        </figure>
+        <h3 class="logo-text">Spotless Planet, LLC</h3>
+      </div>
       <ng-container *ngFor="let link of navLinks">
         <li
           class="nav__item col-1 flex-center"

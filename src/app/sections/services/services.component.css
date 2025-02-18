@@ -1,19 +1,22 @@
-:host {
-  width: 100%;
-}
-
 .services__section {
   margin: 2.5rem 0;
+  justify-content: center;
+}
+
+.services__content {
+  align-items: center;
 }
 
 .services__heading {
   font: var(--font-size-large) var(--font-family-header);
-  color: var(--color-black);
+  text-shadow: 2px 2px 4px var(--color-black);
+  color: var(--color-white);
   margin: 0 0 2.5rem;
 }
 .services__text {
   font: var(--font-size-small) var(--font-family-body);
-  color: var(--color-black);
+  text-shadow: 2px 2px 4px var(--color-black);
+  color: var(--color-white);
   margin: 0.75rem 0;
   padding-right: 3rem;
 }

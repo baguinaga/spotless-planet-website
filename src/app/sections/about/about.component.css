@@ -1,5 +1,10 @@
 .about__section {
   margin: 2.5rem 0;
+  justify-content: center;
+}
+
+.about__content {
+  align-items: center;
 }
 
 .about__heading {

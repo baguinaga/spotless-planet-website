@@ -2,26 +2,31 @@
 :root {
   --container-padding: 15px;
   --gutter-width: 15px;
-  --body-color: #f1e8e4;
+  --body-secondary-color: #e8eae5;
   --color-white: #fff;
   --color-black: #000;
-  --primary-color: #5daaa6;
-  --secondary-color: #3a7774;
-  --tertiary-color: #4d567a;
-  --tertiary-color-light: #8a93b3;
+  --primary-color: #5e7279;
+  --primary-color-light: #627981;
+  --secondary-color: #3b4a4f;
+  --tertiary-color: #96b1b7;
+  --tertiary-color-light: #b2c4c8;
 
-  --font-family-header: "Libre Bodoni", serif;
-  --font-family-body: "Albert Sans", sans-serif;
-  --font-size-title: 3rem;
+  --font-family-header: "Playfair Display", serif;
+  --font-family-body: "Nunito Sans", sans-serif;
+  --font-size-title: 4.5rem;
   --font-size-large: 2rem;
-  --font-size-medium: 1.25rem;
-  --font-size-small: 1rem;
+  --font-size-medium: 1.45rem;
+  --font-size-small: 1.2rem;
 }
 
 /* Normalize CSS */
 
 body {
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -47,7 +52,7 @@ figure {
 /* Document Wide */
 
 body {
-  background: var(--body-color);
+  background: var(--body-secondary-color);
 }
 
 html,

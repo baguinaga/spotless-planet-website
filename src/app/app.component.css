@@ -1,3 +1,14 @@
 .app-wrapper main {
   flex: 1;
 }
+
+.app__section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.services {
+  background-color: var(--tertiary-color);
+  color: var(--color-white);
+}

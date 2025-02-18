@@ -12,11 +12,6 @@ import { RouterModule } from '@angular/router';
 export class HeaderComponent {
   navLinks = [
     {
-      text: 'Home',
-      href: 'home',
-      default: true,
-    },
-    {
       text: 'About',
       href: 'about',
       default: false,

@@ -1,7 +1,11 @@
 .nav {
   height: 4.5rem;
-  background-color: var(--secondary-color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    90deg,
+    var(--primary-color-light),
+    var(--secondary-color)
+  );
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .nav__list {
@@ -9,6 +13,22 @@
   width: 100%;
   height: 100%;
   padding: 0px;
+}
+
+.logo-container {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.logo-container__figure {
+  height: 100%;
+  width: 70px;
+}
+
+.logo-text {
+  font: var(--font-size-small) var(--font-family-header);
+  color: var(--color-white);
+  margin: auto auto auto 1.5rem;
 }
 
 .nav__item {
@@ -30,7 +50,7 @@
 .nav__link {
   text-decoration: none;
   color: #fff;
-  font: var(--font-size-medium) var(--font-family-body);
+  font: var(--font-size-small) var(--font-family-header);
 }
 
 .active .nav__link {
