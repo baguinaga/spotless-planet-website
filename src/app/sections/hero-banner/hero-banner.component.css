@@ -27,6 +27,12 @@
   animation: fadeIn 2s ease-in-out;
 }
 
+@media (max-width: 768px) {
+  .hero-banner__content {
+    padding: 1.5rem;
+  }
+}
+
 .hero-banner__content::before {
   content: "";
   position: absolute;

@@ -3,6 +3,12 @@
   justify-content: center;
 }
 
+.contact__content {
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: center;
+}
+
 .contact__heading {
   font: var(--font-size-large) var(--font-family-header);
   color: var(--color-black);
@@ -13,6 +19,12 @@
   color: var(--color-black);
   margin: 0.75rem 0;
   padding-left: 3rem;
+}
+
+@media (max-width: 768px) {
+  .contact__text {
+    padding-left: 0;
+  }
 }
 
 .contact__list {
@@ -38,6 +50,7 @@
   width: 100%;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2.5rem;
 }
 
 .contact__container {

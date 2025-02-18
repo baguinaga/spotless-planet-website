@@ -52,6 +52,24 @@
   color: #fff;
   font: var(--font-size-small) var(--font-family-header);
 }
+@media (max-width: 768px) {
+  .logo-text,
+  .nav__link {
+    font-size: 12px;
+  }
+  .nav__item {
+    flex: 0 0 14% !important;
+    max-width: 14% !important;
+  }
+  .logo-text {
+    margin: auto auto auto 0.9rem;
+  }
+}
+
+.logo-text,
+.nav__link {
+  text-shadow: 2px 2px 4px var(--color-black);
+}
 
 .active .nav__link {
   text-decoration: underline;
