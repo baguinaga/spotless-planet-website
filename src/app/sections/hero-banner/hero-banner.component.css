@@ -3,13 +3,47 @@
   height: 125px;
 }
 
-.hero-banner {
+/* .hero-banner {
   background-image: url("/assets/images/unsplash_banner_large.jpg");
   background-size: cover;
   background-position: center;
   height: 70vh;
   align-content: center;
+} */
+
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
 }
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* backdrop-filter: blur(2px); */
+  z-index: 0;
+}
+
+.hero-banner__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-banner__content {
+  position: relative;
+  z-index: 1;
+  color: white; /* Adjust text color for better visibility */
+}
+
 .hero-banner__header {
   align-items: center;
 }
